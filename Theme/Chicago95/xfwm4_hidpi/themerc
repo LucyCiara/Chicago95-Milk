@@ -5,8 +5,8 @@
 # Rewritten 2020 to match whats happening in Windows 95 
 
 #activetitle
-active_color_1=#000080
-active_color_2=#000080
+active_color_1=#800000
+active_color_2=#800000
 
 #inactivetitle
 inactive_color_1=#808080
