@@ -16,7 +16,7 @@ stage {
   text-decoration: underline; }
 
 .cinnamon-link:hover {
-  text-shadow: 1px 1px #ffffff; }
+  text-shadow: 1px 1px #0e0e15; }
 
 StScrollBar {
   padding: 0px; }
@@ -29,16 +29,16 @@ StScrollView StScrollBar {
   min-height: 16px; }
 
 StScrollBar StBin#trough {
-  background-color: #ffffff;
+  background-color: #0e0e15;
   background-image: url("scrollbar/checker-board-pattern.png");
   background-repeat: repeat; }
 
 StScrollBar StButton#vhandle {
-  background-color: #c0c0c0;
+  background-color: #53273f;
   border-image: url("scrollbar/scrollbar_button.png") 6; }
 
 StScrollBar StButton#hhandle {
-  background-color: #c0c0c0;
+  background-color: #53273f;
   border-image: url("scrollbar/scrollbar_button.png") 6; }
 
 #Tooltip {
@@ -104,7 +104,7 @@ StScrollBar StButton#hhandle {
 
 .menu {
   padding: 0px;
-  background-color: #c0c0c0;
+  background-color: #53273f;
   color: black;
   border: 2px solid transparent;
   border-image: url("background-assets/menu.png") 6;
@@ -155,7 +155,7 @@ StScrollBar StButton#hhandle {
 }*/
 
 .popup-combo-menu {
-  background-color: #c0c0c0;
+  background-color: #53273f;
   padding: 0px;
   color: black;
   border-image: url("background-assets/sub-menu.png") 6;
@@ -172,7 +172,7 @@ StScrollBar StButton#hhandle {
   spacing: 4px; }
   .popup-menu-item:active {
     background-color: #800000;
-    color: #ffffff; }
+    color: #0e0e15; }
   .popup-menu-item:insensitive {
     color: rgb(140, 140, 140); }
 
@@ -245,14 +245,14 @@ StScrollBar StButton#hhandle {
   spacing: 0; }
 
 #panelLeft:dnd {
-  background-color: #c0c0c0; }
+  background-color: #53273f; }
 
 #panelCenter:dnd {
-  background-color: #c0c0c0;
+  background-color: #53273f;
 }
 
 #panelRight:dnd {
-  background-color: #c0c0c0;
+  background-color: #53273f;
 }
 
 #panelLeft:ltr {
@@ -285,7 +285,7 @@ StScrollBar StButton#hhandle {
 .panel-bottom,
 .panel-left,
 .panel-right {
-  background-color: #c0c0c0; }
+  background-color: #53273f; }
   .panel-top {
     border-image: url("panel/panel-top.png") 4; }
   .panel-bottom {
@@ -334,7 +334,7 @@ StScrollBar StButton#hhandle {
 
 .workspace-add-button {
   background-image: url("misc-assets/plus.png");
-  background-color: #c0c0c0;
+  background-color: #53273f;
   border-image: url("button-assets/button.png") 6;
   height: 150px;
   width: 35px; }
@@ -395,13 +395,13 @@ StScrollBar StButton#hhandle {
   background-color: rgba(0, 0, 0, .4); }
 
 .overview-empty-placeholder {
-  color: #ffffff;
+  color: #0e0e15;
   font-size: 2em; }
 
 .expo-workspace-thumbnail-frame {
   border: 4px transparent;
   border-image: url("frame/frame.png") 6;
-  box-shadow: inset 1px 1px #c0c0c0, inset -1px -1px #c0c0c0; }
+  box-shadow: inset 1px 1px #53273f, inset -1px -1px #53273f; }
   .expo-workspace-thumbnail-frame#active {
   box-shadow: inset 1px 1px #800000, inset -1px -1px #800000; }
 
@@ -415,7 +415,7 @@ StScrollBar StButton#hhandle {
 .desklet:highlight,
 .desklet-with-borders:highlight,
 .desklet-with-borders-and-header:highlight {
-  background-color: #c0c0c0;
+  background-color: #53273f;
 }
 
 .desklet-with-borders {
@@ -529,7 +529,7 @@ StScrollBar StButton#hhandle {
   height: 2.4em; }
   .calendar-day-base:active {
     background: #800000;
-    color: #ffffff; }
+    color: #0e0e15; }
 
 .calendar-day-heading {
   font-size: 9pt;
@@ -692,7 +692,7 @@ StScrollBar StButton#hhandle {
     border: 2px solid rgba(85, 85, 85, 0); }
   .switcher-list .item-box:selected {
     background-color: #800000;
-    color: #ffffff; }
+    color: #0e0e15; }
 
 .switcher-list .thumbnail-box {
   padding: 2px;
@@ -720,7 +720,7 @@ StScrollBar StButton#hhandle {
     color: white; }
 
 .switcher-preview-backdrop {
-  background-color: #c0c0c0; }
+  background-color: #53273f; }
 
 /* ===================================================================
  * Modal dialogs (modalDialog.js)
@@ -757,7 +757,7 @@ StScrollBar StButton#hhandle {
     border-image: url("button-assets/button-pressed.png") 6; }
   .modal-dialog-button:disabled {
     color: #808080;
-    text-shadow: 1px 1px #ffffff; }
+    text-shadow: 1px 1px #0e0e15; }
 
 /* ===================================================================
  * Run dialog (runDialog.js)
@@ -786,7 +786,7 @@ StScrollBar StButton#hhandle {
   width: 250px;
   height: 16px;
   transition-duration: 300;
-  selected-color: #ffffff;
+  selected-color: #0e0e15;
   selection-background-color: #800000; }
 
 .run-dialog-completion-box {
@@ -929,7 +929,7 @@ StScrollBar StButton#hhandle {
 /* Main menu title */
 
 .menu-favorites-box {
-  background-color: #c0c0c0;
+  background-color: #53273f;
   border-image: url("misc-assets/border-frame.png") 4;
   padding: 0.5em; }
 
@@ -982,7 +982,7 @@ StScrollBar StButton#hhandle {
 .menu-category-button-greyed {
   padding: 4px;
   color: #808080;
-  text-shadow: 1px 1px #ffffff;
+  text-shadow: 1px 1px #0e0e15;
   font-style: italic; }
 
 .menu-category-button-selected {
@@ -1213,7 +1213,7 @@ StScrollBar StButton#hhandle {
 .sound-player .slider {
   height: 0.5em;
   -slider-height: 0.5em;
-  -slider-background-color: #c0c0c0;
+  -slider-background-color: #53273f;
   -slider-border-color: black;
   -slider-active-background-color: #800000;
   -slider-active-border-color: black;
@@ -1245,7 +1245,7 @@ StScrollBar StButton#hhandle {
   padding: 16px;
   spacing: 0.5em;
   color: #464646;
-  background: #c0c0c0;
+  background: #53273f;
 }
 
 .sound-player-overlay StBoxLayout {
@@ -1322,24 +1322,24 @@ StScrollBar StButton#hhandle {
 
 .workspace-graph .workspace {
   border: 1px solid black;
-  background-color: #c0c0c0;
+  background-color: #53273f;
 }
 
 .workspace-graph .workspace:active {
-  border: 1px solid #ffffff;
-  background-color: #c0c0c0;
+  border: 1px solid #0e0e15;
+  background-color: #53273f;
 }
 
 .workspace-graph .workspace .windows {
   -active-window-background: #808080;
   -active-window-border: #000000;
-  -inactive-window-background: #c0c0c0;
+  -inactive-window-background: #53273f;
   -inactive-window-border: #000000;
 }
 
 .workspace-graph .workspace:active .windows {
   -active-window-background: #800000;
-  -active-window-border: #ffffff;
+  -active-window-border: #0e0e15;
   -inactive-window-background: #808080;
   -inactive-window-border: #000000;
 }
