@@ -43,7 +43,7 @@ class InstallGUI:
 	def set_style(self):
 		# From https://gist.github.com/carlos-jenkins/8923124
 		provider = Gtk.CssProvider()
-		provider.load_from_path(running_folder + "/Theme/Chicago95/gtk-3.0/gtk.css")
+		provider.load_from_path(running_folder + "/Theme/Chicago95-Milk/gtk-3.0/gtk.css")
 		screen = Gdk.Display.get_default_screen(Gdk.Display.get_default())
 		# I was unable to found instrospected version of this
 		GTK_STYLE_PROVIDER_PRIORITY_APPLICATION = 600
@@ -175,7 +175,7 @@ class InstallGUI:
 		if self.install_theme:
 			# Does ~/.themes exist?
 			Path(os.path.expanduser("~/.themes")).mkdir(parents=True, exist_ok=True)
-			self.copy_files.update(self.get_files(running_folder+"/Theme/Chicago95/", os.path.expanduser("~/.themes"), "Theme"))
+			self.copy_files.update(self.get_files(running_folder+"/Theme/Chicago95-Milk/", os.path.expanduser("~/.themes"), "Theme"))
 			self.copy_files["install_theme"] = self.install_theme
 			self.progress_label_sections.append("GTK Theme")
 		if self.install_icons:
@@ -257,10 +257,10 @@ class InstallGUI:
 			else:
 				if from_file == "install_theme" and self.copy_files["install_theme"]:
 					print("Enabling Theme in XFCE4")
-					self.xfconf_query('xsettings', '/Net/ThemeName', "Chicago95")
-					self.xfconf_query('xfce4-notifyd', '/theme', "Chicago95")
+					self.xfconf_query('xsettings', '/Net/ThemeName', "Chicago95-Milk")
+					self.xfconf_query('xfce4-notifyd', '/theme', "Chicago95-Milk")
 					self.xfconf_query('xfce4-notifyd', '/initial-opacity', "1.000000")
-					self.xfconf_query('xfwm4', '/general/theme', "Chicago95")
+					self.xfconf_query('xfwm4', '/general/theme', "Chicago95-Milk")
 					self.xfconf_query('xfwm4', '/general/title_font', "Sans Bold 8")
 					self.xfconf_query("xfwm4","/general/shadow_delta_height","0")
 					self.xfconf_query("xfwm4","/general/shadow_delta_width","0")
