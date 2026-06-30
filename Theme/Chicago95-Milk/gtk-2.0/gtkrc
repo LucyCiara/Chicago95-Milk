@@ -1,12 +1,12 @@
 # Chicago95 by Grassmunk
 # Based on Xfce-Redmond by dbbolton
 
-gtk_color_scheme = "fg_color:#000000\nbg_color:#c0c0c0\nbase_color:#ffffff\ntext_color:#000000\nselected_bg_color:#800000\nselected_fg_color:#ffffff"
+gtk_color_scheme = "fg_color:#ad3233\nbg_color:#53273f\nbase_color:#0e0e15\ntext_color:#ad3233\nselected_bg_color:#800000\nselected_fg_color:#0e0e15"
 
 ######################################
 ## original color scheme
 #
-# gtk_color_scheme = "fg_color:#000000\nbg_color:#c0c0c0\nbase_color:#ffffff\ntext_color:#000000\nselected_bg_color:#800000\nselected_fg_color:#ffffff"
+# gtk_color_scheme = "fg_color:#ad3233\nbg_color:#53273f\nbase_color:#0e0e15\ntext_color:#ad3233\nselected_bg_color:#800000\nselected_fg_color:#0e0e15"
 #
 ######################################
 
@@ -540,8 +540,8 @@ class "GtkOptionMenu" style "standard-option-menu"
 
 style "gnome-color-chooser-tooltips"
 {
-	bg[NORMAL] = "#ffffe1"
-	fg[NORMAL] = "#000000"
+	bg[NORMAL] = "#53272f"
+	fg[NORMAL] = "#ad3233"
 }
 widget "gtk-tooltip*" style "gnome-color-chooser-tooltips"
 
@@ -554,12 +554,12 @@ style "xfdesktop-icon-view" {
 #	XfdesktopIconView::shadow-y-offset = 1			#Enable these if you want a shadow behind text
 #	XfdesktopIconView::selected-shadow-x-offset = 1			#Enable these if you want a shadow behind text
 #	XfdesktopIconView::selected-shadow-y-offset = 1			#Enable these if you want a shadow behind text
-#	XfdesktopIconView::shadow-color = "#000000"			#Enable these if you want a shadow behind text
-#	XfdesktopIconView::selected-shadow-color = "#000000"			#Enable these if you want a shadow behind text
+#	XfdesktopIconView::shadow-color = "#ad3233"			#Enable these if you want a shadow behind text
+#	XfdesktopIconView::selected-shadow-color = "#ad3233"			#Enable these if you want a shadow behind text
 #	XfdesktopIconView::shadow-blur-radius = 2			#Enable this if you want a a blurry shadow behind text
 	XfdesktopIconView::cell-spacing = 5
 	XfdesktopIconView::cell-padding = 0
-	XfdesktopIconView::cell-color = "#c0c0c0"
+	XfdesktopIconView::cell-color = "#53273f"
 	XfdesktopIconView::cell-text-width-proportion = 2.4
 	XfdesktopIconView::ellipsize-icon-labels = 0
 	base[NORMAL] = "#008081"			#This is the desktop icon label background colour.
