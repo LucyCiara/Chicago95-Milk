@@ -64,7 +64,7 @@ class InstallGUI:
 			statvfs.f_frsize * statvfs.f_bfree      # Actual number of free bytes
 			self.available_kb = (statvfs.f_frsize * statvfs.f_bavail) / 1024
 			self.theme_size_kb = self.folder_size(running_folder+"/Theme")
-			self.icons_size_kb = self.folder_size(running_folder+"/Icons/Chicago95")
+			self.icons_size_kb = self.folder_size(running_folder+"/Icons/Chicago95-Milk")
 			self.cursors_size_kb = self.folder_size(running_folder+"/Cursors")
 			self.background_size_kb = 0
 			self.sounds_size_kb = self.folder_size(running_folder+"/sounds")
@@ -180,7 +180,7 @@ class InstallGUI:
 			self.progress_label_sections.append("GTK Theme")
 		if self.install_icons:
 			Path(os.path.expanduser("~/.icons")).mkdir(parents=True, exist_ok=True)
-			self.copy_files.update(self.get_files(running_folder+"/Icons/Chicago95/", os.path.expanduser("~/.icons"), "Icons"))
+			self.copy_files.update(self.get_files(running_folder+"/Icons/Chicago95-Milk/", os.path.expanduser("~/.icons"), "Icons"))
 			self.copy_files["install_icons"] = self.install_icons
 			self.progress_label_sections.append("Icons")
 		if self.install_cursors:
