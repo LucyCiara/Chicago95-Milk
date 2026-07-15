@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=RetroPuffy
+Description=Retro Puffy theme.
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/RetroPuffy
+ScriptFile=/usr/share/plymouth/themes/RetroPuffy/RetroPuffy.script
