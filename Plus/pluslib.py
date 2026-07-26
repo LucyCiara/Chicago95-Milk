@@ -1143,7 +1143,7 @@ class ChicagoPlus:
 			'buttonhilight' : 'border_bright',
 			'buttonshadow' : 'border_shade',
 			'buttontext' :  'button_text_color',
-			'graytext' : 'selected_bg_color',
+			'graytext' : False,
 			'hilight' : 'selected_bg_color',
 			'hilighttext' : 'selected_fg_color',
 			'inactiveborder' : False,
@@ -1183,7 +1183,7 @@ class ChicagoPlus:
 								self.logger.debug("{:<21} | Writting: {}".format("", line.strip()))
 						else:
 							for name in windows_to_gtk[color_name]:
-								if " "+name in line:
+								if " " + name + " " in line:
 									self.logger.debug("{:<21} | FOUND! {} in {}".format("", name, line.strip()))
 									start = line.find(name) + len(name) + 1
 									end = line.find(";", start)
@@ -1830,6 +1830,7 @@ class ChicagoPlus:
 								'-fill', ButtonHilight, '-opaque', originals['ButtonHilight'],
 								'-fill', ButtonFace, '-opaque', originals['ButtonFace'],
 								'-fill', ButtonText, '-opaque', originals['ButtonText'],
+								'-type', 'TrueColorAlpha',
 								'-quiet',
 								sub_asset_path
 							]
@@ -1856,6 +1857,7 @@ class ChicagoPlus:
 						'-fill', ButtonHilight, '-opaque', originals['ButtonHilight'],
 						'-fill', ButtonFace, '-opaque', originals['ButtonFace'],
 						'-fill', ButtonText, '-opaque', originals['ButtonText'],
+						'-type', 'TrueColorAlpha',
 						'-quiet',
 						asset_path
 					]

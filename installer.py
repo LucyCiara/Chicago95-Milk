@@ -314,7 +314,7 @@ class InstallGUI:
 
 				elif from_file == "install_cursors" and self.copy_files["install_cursors"]:
 					print("Enabling Cursors in XFCE4")
-					self.xfconf_query('xsettings', '/Gtk/CursorThemeName', "Chicago95 Standard Cursors")
+					self.xfconf_query('xsettings', '/Gtk/CursorThemeName', "Chicago95_Standard_Cursors")
 					self.change_component_label()
 				elif from_file == "install_sounds" and self.copy_files["install_sounds"]:
 					print("Enabling Sounds in XFCE4")

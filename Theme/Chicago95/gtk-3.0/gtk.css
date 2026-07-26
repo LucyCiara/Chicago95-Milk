@@ -137,6 +137,12 @@
 @define-color xfd_icon_text #ffffff;
 @define-color xfd_rubberband_outline #ff7f7f;
 
+@define-color dark_shadow #000000;
+@define-color text_bright #ffffff;
+@define-color toolbar_bg_color @bg_color;
+@define-color toolbar_fg_color @fg_color;
+@define-color transparent rgba(0,0,0,0);
+
 /* Nautilus desktop icon text colour */
 @define-color nautilus_icon_text @base_color;
 @define-color nautilus_icon_text_shadow @text_color;
