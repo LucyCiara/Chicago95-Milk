@@ -133,7 +133,7 @@
 @define-color whisker_menu_logo @bg_shade;
 
 /* XFCE desktop icon colours*/
-@define-color xfd_icon_backdrop #008081;
+@define-color xfd_icon_backdrop rgba(0,0,0,0);
 @define-color xfd_icon_text #ffffff;
 @define-color xfd_rubberband_outline #ff7f7f;
 
