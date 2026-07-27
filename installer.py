@@ -448,7 +448,7 @@ class InstallGUI:
 				env_content = f.read()
 			env_content = re.sub(
 				r'^XCURSOR_THEME=.*',
-				'XCURSOR_THEME=Chicago95 Standard Cursors',
+				'XCURSOR_THEME=Chicago95_Standard_Cursors',
 				env_content,
 				flags=re.MULTILINE,
 			)

@@ -1824,13 +1824,14 @@ class ChicagoPlus:
 							)
 							args = [
 								mogrify_path,
+								'-colorspace', 'sRGB',
+								'-type', 'TrueColorAlpha',
 								'-fill', ButtonDKShadow, '-opaque', originals['ButtonDKShadow'],
 								'-fill', ButtonLight, '-opaque', originals['ButtonLight'],
 								'-fill', ButtonShadow, '-opaque', originals['ButtonShadow'],
 								'-fill', ButtonHilight, '-opaque', originals['ButtonHilight'],
 								'-fill', ButtonFace, '-opaque', originals['ButtonFace'],
 								'-fill', ButtonText, '-opaque', originals['ButtonText'],
-								'-type', 'TrueColorAlpha',
 								'-quiet',
 								sub_asset_path
 							]
@@ -1851,13 +1852,14 @@ class ChicagoPlus:
 					)
 					args = [
 						mogrify_path,
+						'-colorspace', 'sRGB',
+						'-type', 'TrueColorAlpha',
 						'-fill', ButtonDKShadow, '-opaque', originals['ButtonDKShadow'],
 						'-fill', ButtonLight, '-opaque', originals['ButtonLight'],
 						'-fill', ButtonShadow, '-opaque', originals['ButtonShadow'],
 						'-fill', ButtonHilight, '-opaque', originals['ButtonHilight'],
 						'-fill', ButtonFace, '-opaque', originals['ButtonFace'],
 						'-fill', ButtonText, '-opaque', originals['ButtonText'],
-						'-type', 'TrueColorAlpha',
 						'-quiet',
 						asset_path
 					]
