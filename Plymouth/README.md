@@ -13,11 +13,13 @@ Copy the theme folder into the Plymouth theme directory.
 
 - `sudo cp -r Chicago95/Plymouth/Chicago95 /usr/share/plymouth/themes/`
 - `sudo cp -r Chicago95/Plymouth/RetroTux /usr/share/plymouth/themes/`
+- `sudo cp -r Chicago95/Plymouth/RetroPuffy /usr/share/plymouth/themes/`
 
 Add to default.plymouth
 
 - `sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/Chicago95/Chicago95.plymouth 100`
 - `sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/RetroTux/RetroTux.plymouth 100`
+- `sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/RetroPuffy/RetroPuffy.plymouth 100`
 
 Choose the theme to load. (As you run the following command there will be a number assigned to each theme and located in the first column of a list. Use that number to specify the theme and press enter to continue.)
 
@@ -35,8 +37,10 @@ Copy the theme folder into the Plymouth theme directory.
 
 - `sudo cp -r Chicago95/Plymouth/Chicago95 /usr/share/plymouth/themes/`
 - `sudo cp -r Chicago95/Plymouth/RetroTux /usr/share/plymouth/themes/`
+- `sudo cp -r Chicago95/Plymouth/RetroPuffy /usr/share/plymouth/themes/`
 
 Set the theme as default to use
 
 - `sudo plymouth-set-default-theme -R Chicago95`
 - `sudo plymouth-set-default-theme -R RetroTux`
+- `sudo plymouth-set-default-theme -R RetroPuffy`
