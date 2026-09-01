@@ -1143,7 +1143,7 @@ class ChicagoPlus:
 			'buttonhilight' : 'border_bright',
 			'buttonshadow' : 'border_shade',
 			'buttontext' :  'button_text_color',
-			'graytext' : False,
+			'graytext' : 'selected_bg_color',
 			'hilight' : 'selected_bg_color',
 			'hilighttext' : 'selected_fg_color',
 			'inactiveborder' : False,
@@ -1183,7 +1183,7 @@ class ChicagoPlus:
 								self.logger.debug("{:<21} | Writting: {}".format("", line.strip()))
 						else:
 							for name in windows_to_gtk[color_name]:
-								if " " + name + " " in line:
+								if " "+name in line:
 									self.logger.debug("{:<21} | FOUND! {} in {}".format("", name, line.strip()))
 									start = line.find(name) + len(name) + 1
 									end = line.find(";", start)
@@ -1824,8 +1824,6 @@ class ChicagoPlus:
 							)
 							args = [
 								mogrify_path,
-								'-colorspace', 'sRGB',
-								'-type', 'TrueColorAlpha',
 								'-fill', ButtonDKShadow, '-opaque', originals['ButtonDKShadow'],
 								'-fill', ButtonLight, '-opaque', originals['ButtonLight'],
 								'-fill', ButtonShadow, '-opaque', originals['ButtonShadow'],
@@ -1852,8 +1850,6 @@ class ChicagoPlus:
 					)
 					args = [
 						mogrify_path,
-						'-colorspace', 'sRGB',
-						'-type', 'TrueColorAlpha',
 						'-fill', ButtonDKShadow, '-opaque', originals['ButtonDKShadow'],
 						'-fill', ButtonLight, '-opaque', originals['ButtonLight'],
 						'-fill', ButtonShadow, '-opaque', originals['ButtonShadow'],

@@ -6,9 +6,6 @@
 #### RetroTux Plymouth boot screen
 ![alt text](retrotux.png "RetroTux Plymouth Boot Splash")
 
-#### RetroPuffy Plymouth boot screen
-![alt text](retropuffy.png "RetroPuffy Plymouth Boot Splash")
-
 #### Desktop screenshots
 ![alt text](Desktop0.png "Desktop")
 
