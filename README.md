@@ -2,7 +2,7 @@
 #### XFCE / Xubuntu Windows 95 Total Conversion
 
 <p align="center">
-<img src="Screenshots/Chicago95_Desktop.png" alt="Chicago95 Desktop"/>
+<img src="Screenshots/Chicago95-Milk_Desktop.png" alt="Chicago95-Milk Desktop"/>
 </p>
 
 *Click [here](Screenshots/SCREENSHOTS.md) for more screenshots*
